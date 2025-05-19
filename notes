@@ -1,0 +1,9 @@
+Basically, we need a batch script (not bash) to run on a Windows PowerShell machine. The script should:
+
+- Take a directory as an input argument.
+- Take AWS S3 bucket credentials. usig rclone
+- Loop through all files and subdirectories in that directory.
+- Upload each file to S3 using rclone (an open-source command line tool).
+- The script will loop through folders and run the copy command.
+- The key focus is on error handling: it must catch any exceptions and retry to continue reliably.
+
